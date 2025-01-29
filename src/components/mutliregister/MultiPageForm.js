@@ -112,10 +112,10 @@ const MultiPageForm = () => {
       alert("Please fill all the fields");
       return;
     }
-    if (imageFile.size > 1000000) {
-      alert("Image size should be less than 1MB");
-      return;
-    }
+    // if (imageFile.size > 1000000) {
+    //   alert("Image size should be less than 1MB");
+    //   return;
+    // }
 
     if (imageFile.width !== imageFile.heigh) {
       alert("Image should be in 800px x 800px or Square format");

@@ -135,10 +135,10 @@ const NominateForm = () => {
     }
 
     const imageFile = e.target.files[0];
-    if (imageFile.size > 1000000) {
-      alert("Image size should be less than 1MB");
-      return;
-    }
+    // if (imageFile.size > 1000000) {
+    //   alert("Image size should be less than 1MB");
+    //   return;
+    // }
 
     if (imageFile.width <= 800 && imageFile.height <= 800) {
       alert("Image should be in 800px x 800px");

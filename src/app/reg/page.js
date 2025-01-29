@@ -31,10 +31,10 @@ const DelegateRegistrationForm = () => {
       alert("Please fill all the fields");
       return;
     }
-    if (imageFile.size > 1000000) {
-      alert("Image size should be less than 1MB");
-      return;
-    }
+    // if (imageFile.size > 1000000) {
+    //   alert("Image size should be less than 1MB");
+    //   return;
+    // }
 
     // Assuming imageFile.width and imageFile.height are available
     if (imageFile.width > 800 || imageFile.height > 800) {
