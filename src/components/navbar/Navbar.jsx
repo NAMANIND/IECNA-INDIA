@@ -74,7 +74,7 @@ function Navbar() {
                     ABOUT
                   </a>
                 </li>
-                <li className="relative group">
+                <li style={{ display: navigation ? "none" : "flex" }}>
                   <a href="/awards" className=" hover:text-[#ccff00]">
                     AWARDS
                   </a>
@@ -150,7 +150,7 @@ function Navbar() {
                 ABOUT
               </a>
             </li>
-            <li className="relative group">
+            <li style={{ display: navigation ? "none" : "flex" }}>
               <a href="/awards" className=" hover:text-[#ccff00]">
                 AWARDS
               </a>
