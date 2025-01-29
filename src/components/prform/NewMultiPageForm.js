@@ -552,9 +552,9 @@ const NewMultiPageForm = ({ to, name }) => {
         direction="left"
         gradient={false}
         speed={40}
-        className={` z-10 text-9xl w-full ${work_sans.className} font-bold absolute uppercase top-12 `}
+        className={` z-10 md:text-9xl text-4xl w-full md:h-[300px] h-[150px] ${work_sans.className} font-bold absolute uppercase md:top-12 top-0 `}
         autoFill={true}
-        style={{ height: "300px", ...maskImageStyle }}
+        style={{ ...maskImageStyle }}
       >
         &nbsp; REGISTER
       </Marquee>
