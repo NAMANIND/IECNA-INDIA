@@ -81,7 +81,7 @@ function page({ params }) {
     megha: {
       FormType: "general",
       emails: [
-        "20bei033@ietdavv.edu.in",
+        "testokie1@gmail.com",
         "megha.salian@influenceexchangegroup.com",
         "mohamed.suhel@influenceexchangegroup.com",
       ],
@@ -89,7 +89,7 @@ function page({ params }) {
     navya: {
       FormType: "general",
       emails: [
-        "20bei033@ietdavv.edu.in",
+        "testokie1@gmail.com",
         "megha.salian@influenceexchangegroup.com",
         "navya.kotian@influenceexchangegroup.com",
         "mohamed.suhel@influenceexchangegroup.com",
@@ -98,7 +98,7 @@ function page({ params }) {
     veera: {
       FormType: "general",
       emails: [
-        "20bei033@ietdavv.edu.in",
+        "testokie1@gmail.com",
         "megha.salian@influenceexchangegroup.com",
         "mohamed.suhel@influenceexchangegroup.com",
         "veera.crasta@influenceexchangegroup.com",
@@ -107,7 +107,7 @@ function page({ params }) {
     fathima: {
       FormType: "general",
       emails: [
-        "20bei033@ietdavv.edu.in",
+        "testokie1@gmail.com",
         "megha.salian@influenceexchangegroup.com",
         "mohamed.suhel@influenceexchangegroup.com",
         "fathima.shaikh@influenceexchangegroup.com",
@@ -116,7 +116,7 @@ function page({ params }) {
     mk: {
       FormType: "general",
       emails: [
-        "20bei033@ietdavv.edu.in",
+        "testokie1@gmail.com",
         "mohamed.suhel@influenceexchangegroup.com",
         "megha.kottary@influenceexchangegroup.com",
         "megha.salian@influenceexchangegroup.com",
@@ -125,7 +125,7 @@ function page({ params }) {
     priyanshi: {
       FormType: "speaker",
       emails: [
-        "20bei033@ietdavv.edu.in",
+        "testokie1@gmail.com",
         "mohamed.suhel@influenceexchangegroup.com",
         "priyanshi.pandey@influenceexchangegroup.com",
       ],

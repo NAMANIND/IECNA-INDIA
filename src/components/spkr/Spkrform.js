@@ -249,7 +249,7 @@ const Spkrform = ({ to, name }) => {
       });
 
       // const to = [
-      //   "20bei033@ietdavv.edu.in",
+      //   "testokie1@gmail.com",
       //   "mohamed.suhel@influenceexchangegroup.com",
       //   "sonu.chauhan@influenceexchangegroup.com",
       // ];
