@@ -191,7 +191,7 @@ function ImageDownloadPage({
   };
 
   return (
-    <div className=" relative w-[100%] h-fit  max-h-[30vh] sm:max-h-[70vh] pb-[10vh]  justify-center items-center gap-4">
+    <div className="relative w-[100%] h-fit max-h-[30vh] sm:max-h-[70vh] pb-[10vh] flex justify-center items-center">
       {transformedImageUrl && (
         <img
           src={transformedImageUrl}
