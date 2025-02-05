@@ -4,6 +4,7 @@ import React, { use, useEffect, useState } from "react";
 import fileDownload from "js-file-download";
 import axios from "axios";
 import { firestore } from "../../../firbase/clientApp";
+import { CircularProgress } from "@mui/material";
 
 function ImageDownloadPage({
   imageData,
@@ -195,32 +196,30 @@ function ImageDownloadPage({
         <img
           src={transformedImageUrl}
           alt={title}
-          style={displayed ? { display: "none" } : { display: "block" }} // Hide the image
-          className={`object-contain w-[100%] max-h-[25vh] h-[60vh] sm:max-h-[60vh]`}
-          onLoad={handleImageLoad} // Call handleImageLoad function when the image is loaded
+          style={displayed ? { display: "none" } : { display: "block" }}
+          className="object-contain w-[100%] max-h-[25vh] h-[60vh] sm:max-h-[60vh]"
+          onLoad={handleImageLoad}
         />
       )}
-      {transformedImageUrl && (
+      {displayed && (
+        <div
+          className="absolute animate-pulse rounded-md bg-[#F5F5F5] flex flex-col justify-center items-center
+        h-[200px] sm:h-[400px] w-full 
+        
+        "
+        >
+          <CircularProgress className="animate-spin rounded-full h-16 w-16 mb-4" />
+          <p className="text-2xl text-gray-600">Generating Banner...</p>
+        </div>
+      )}
+      {!displayed && (
         <button
-          style={displayed ? { display: "none" } : { display: "block" }} // Hide the button
           onClick={handleDownloadTransformed}
           className="newsletterbtn w-full absolute -bottom-2 left-1/2 -translate-x-1/2 bg-black/30 text-white p-2 rounded-md"
         >
           Download Poster
         </button>
       )}
-      {displayed && (
-        <div className="w-full h-full flex justify-center items-center">
-          <p className="text-2xl">Generating Banner...</p>
-        </div>
-      )}
-
-      <button
-        onClick={handleDownloadTransformed}
-        className="newsletterbtn w-full absolute -bottom-2 left-1/2 -translate-x-1/2 bg-black/30 text-white p-2 rounded-md"
-      >
-        Download Poster
-      </button>
     </div>
   );
 }
