@@ -290,9 +290,6 @@ const NewMultiPageForm = ({ to, name }) => {
         <p>Instagram: ${formData.instagram}</p>
         <p>Youtube: ${formData.youtube}</p>
         <p>Snapchat: ${formData.snapchat}</p>
-        <p>Recommendation 1: ${formData.recommendation1}</p>
-        <p>Recommendation 2: ${formData.recommendation2}</p>
-    
         ${imageRef ? `<img src="${imageUrl}" alt="nominee image" />` : ""}
         ${imageRef ? `<p>Image url: ${imageUrl}</p>` : ""}
       `;
@@ -391,12 +388,15 @@ const NewMultiPageForm = ({ to, name }) => {
           categories: { ...categoriesData },
           email: formData.email,
           phone: formData.phone,
-          company: formData.company,
+          company: formData.company || "",
           jobTitle: formData.jobTitle,
           country: formData.country,
-          industry: formData.industry,
-          linkedin: formData.linkedin,
-          instagram: formData.instagram,
+          industry: formData.industry || "",
+          linkedin: formData.linkedin || "",
+          instagram: formData.instagram || "",
+          youtube: formData.youtube || "",
+          snapchat: formData.snapchat || "",
+
           imageUrl,
         });
       }
@@ -475,18 +475,22 @@ const NewMultiPageForm = ({ to, name }) => {
 
       await nomineeRef.set({
         id: nomineeId,
-        firstName: formData.firstName.toLowerCase().replace(/\s/g, ""),
-        lastName: formData.lastName.toLowerCase().replace(/\s/g, ""),
-        field,
-        email: formData.email,
-        phone: formData.phone,
-        company: formData.company,
-        jobTitle: formData.jobTitle,
-        country: formData.country,
-        industry: formData.industry,
-        linkedin: formData.linkedin,
-        instagram: formData.instagram,
-        imageUrl2,
+        firstName: formData.firstName.toLowerCase().replace(/\s/g, "") || "",
+        lastName: formData.lastName.toLowerCase().replace(/\s/g, "") || "",
+        field: field || "",
+        email: formData.email || "",
+        phone: formData.phone || "",
+        company: formData.company || "",
+        jobTitle: formData.jobTitle || "",
+        country: formData.country || "",
+        industry: formData.industry || "",
+        linkedin: formData.linkedin || "",
+        instagram: formData.instagram || "",
+        youtube: formData.youtube || "",
+        snapchat: formData.snapchat || "",
+        recommendation1: formData.recommendation1 || "",
+        recommendation2: formData.recommendation2 || "",
+        imageUrl: imageUrl2 || "",
       });
 
       setSent(true);
@@ -507,6 +511,12 @@ const NewMultiPageForm = ({ to, name }) => {
         country: "",
         industry: "",
         socialMedia: "",
+        linkedin: "",
+        instagram: "",
+        youtube: "",
+        snapchat: "",
+        recommendation1: "",
+        recommendation2: "",
       });
       setPage(1);
       setTopics([]);
