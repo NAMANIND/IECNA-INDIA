@@ -25,6 +25,7 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Socialshare from "@/app/socialshare/page";
 import { MuiPhone } from "../phone/MuiPhone";
 import { datacon } from "../../datacon";
+import { CircularProgress } from "@mui/material";
 
 const NewMultiPageForm = ({ to, name }) => {
   const [page, setPage] = useState(1);
@@ -1051,6 +1052,21 @@ const NewMultiPageForm = ({ to, name }) => {
         </form>
       </div>
 
+      {submitted && (
+        <div className="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-8 rounded-lg flex flex-col items-center">
+            <CircularProgress className="animate-spin rounded-full h-16 w-16  mb-4" />
+
+            <p className="text-lg font-semibold">Submitting your form...</p>
+            <p className="text-sm text-gray-500 text-center mt-2">
+              Please do not refresh the page or close the tab.
+              <br />
+              Wait for the banner generation after submission.
+            </p>
+          </div>
+        </div>
+      )}
+
       {sent && (
         <div className="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white sm:w-full w-[90%] p-10 rounded-lg  max-h-[90vh] mx-20 my-5">
@@ -1065,7 +1081,7 @@ const NewMultiPageForm = ({ to, name }) => {
                   setrtype("");
                 }}
                 className={`absolute right-0 top-0  
-                bg-black text-white w-fit h-fit rounded-3xl 
+                bg-black text-w</div>hite w-fit h-fit rounded-3xl 
             px-3 py-1
                  
                  right-[${rtype === "nomination" ? 0 : -8}] top-[${
