@@ -1090,7 +1090,7 @@ const NewMultiPageForm = ({ to, name }) => {
                 
                 `}
               >
-                <CloseIcon />
+                <CloseIcon className="text-white" />
               </button>
             </div>
             <div className="flex-col justify-center sm:justify-around sm:flex-row flex gap-5 items-center w-full">
