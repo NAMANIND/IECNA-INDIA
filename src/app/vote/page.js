@@ -150,7 +150,8 @@ const Voting = () => {
       return;
     }
 
-    const emailExists = await checkEmailExists(email);
+    // const emailExists = await checkEmailExists(email);
+    const emailExists = false;
     if (emailExists) {
       alert("You have already voted with this email address.");
       return;
