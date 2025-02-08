@@ -52,7 +52,7 @@ function Herosection() {
           >
             {" "}
             <Countdown futureDate={futureDate} />
-            Aamchi Mumbai
+            Mumbai
           </div>
           <div className="flex-auto sm:mt-6  mt-0 leading-[250%] sm:text-right text-center">
             30<sup className="text-white">th</sup> APRIL 2025

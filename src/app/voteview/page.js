@@ -16,6 +16,44 @@ const VoteViews = () => {
   const [searchResults2, setSearchResults2] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
+  const influencerCategories = [
+    "Mega/Celeb-Influencer of the Year",
+    "Macro-Influencer of the Year",
+    "Micro-Influencer of the Year",
+    "Nano Influencer of the year",
+    "Creative Visual Content Creator",
+    "Social Media Engagement Champion",
+    "Best Fashion and Style Influencer of the Year",
+    "Best Travel Influencer of the Year",
+    "Best Beauty Influencer of the Year",
+    "Best Health & Wellbeing Influencer of the Year",
+    "Best Financial Influencer Award",
+    "Gaming Influencer of the Year",
+    "Blogger of the year",
+    "Mom Influencer of the year",
+    "Youtuber of the year",
+    "Entertainment Maven of the Year",
+    "Food/Culinary Influencer of the Year",
+    "Educational Content Creator of the Year",
+    "Best Art & Photography Influencer",
+    "Plus size influencer of the Year",
+    "Best Tech Influencer of the Year",
+    "Most Promising Influencer of the Year",
+  ];
+
+  const marketerCategories = [
+    "Marketing Leader of the Year",
+    "Branding Leader of the Year",
+    "Digital Marketeer of the Year",
+    "Influencer Marketeer of the Year",
+    "Social Media Marketeer of the Year",
+    "Data-Driven Marketer of the Year",
+    "Brand Activation Strategist of the Year",
+    "Customer Experience Advocate",
+    "Digital Transformation Leader of the Year",
+    "PR and Communication Strategist of the Year",
+  ];
+
   useEffect(() => {
     const fetchTransformedImages = async () => {
       try {
@@ -83,18 +121,33 @@ const VoteViews = () => {
           }
         });
 
-        // Sort nominees by vote count in descending order
+        // Sort nominees by vote count in descending order within each category
         const sortedNominees = nomineesWithVotes.sort(
           (a, b) => b.vote - a.vote
         );
 
         // Group nominees by category
-        const groupedNominees = sortedNominees.reduce((acc, nominee) => {
-          const category = nominee.category;
-          acc[category] = acc[category] || [];
-          acc[category].push(nominee);
-          return acc;
-        }, {});
+        const groupedNominees = {};
+
+        // First add marketer categories in order
+        marketerCategories.forEach((category) => {
+          const categoryNominees = sortedNominees.filter(
+            (nominee) => nominee.category === category
+          );
+          if (categoryNominees.length > 0) {
+            groupedNominees[category] = categoryNominees;
+          }
+        });
+
+        // Then add influencer categories in order
+        influencerCategories.forEach((category) => {
+          const categoryNominees = sortedNominees.filter(
+            (nominee) => nominee.category === category
+          );
+          if (categoryNominees.length > 0) {
+            groupedNominees[category] = categoryNominees;
+          }
+        });
 
         setNomineesByCategory(groupedNominees);
       } catch (error) {

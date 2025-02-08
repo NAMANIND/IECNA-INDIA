@@ -8,11 +8,12 @@ import fly from "../../../../public/images/sponsors/flybharti.png";
 import views from "../../../../public/images/sponsors/views.jpg";
 import soge from "../../../../public/images/sponsors/soge.png";
 import greenroom from "../../../../public/images/sponsors/greenroom.png";
+import flaunt from "../../../../public/images/sponsors/flaunt.png";
 import Image from "next/image";
 
 function Oursponsor() {
   // Define data for sponsors
-  const sponsors = [
+  const sponsors_series = [
     {
       title: "TITLE SPONSOR",
       name: "Insta Chef",
@@ -60,6 +61,18 @@ function Oursponsor() {
     },
   ];
 
+  const sponsors = [
+    {
+      title: "EXHIBITOR",
+      name: "Flaunt",
+      description:
+        "Flaunt offers an AI-powered SaaS platform purposefully designed for beauty & fashion brands to grow their social media & scale their influencer marketing!",
+      imageUrl: "/images/sponsors/flaunt-og.png",
+      logoUrl: flaunt,
+      link: "https://www.letsflaunt.com/",
+    },
+  ];
+
   const offscreen = {
     y: 100,
     opacity: 0,
@@ -84,6 +97,64 @@ function Oursponsor() {
         viewport={{ once: true, amount: 0.3 }}
         className={`text-5xl text-center text-black leading-[61.92px] max-md:text-4xl ${anton.className} `}
       >
+        OUR SPONSORS
+      </motion.div>
+
+      <div className="self-stretch mt-24 mb-24 w-full max-md:mt-10 max-md:max-w-full">
+        <div className="flex gap-[3%] gap-y-14 flex-wrap max-md:flex-col  max-md:gap-0">
+          {/* Map over sponsors array and render sponsor cards dynamically */}
+          {sponsors.map((sponsor, index) => (
+            <div
+              key={index}
+              className="flex flex-wrap w-[31%] max-md:ml-0 max-md:w-full"
+            >
+              <div
+                className="flex flex-col grow pb-11 w-full text-2xl tracking-tighter 
+              group
+               leading-6 text-white bg-black rounded-[36px] max-md:mt-6"
+              >
+                <div className="overflow-hidden rounded-t-[36px]">
+                  <img
+                    loading="lazy"
+                    src={sponsor.imageUrl}
+                    className="w-full aspect-[2.38] group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                  />
+                </div>
+                <motion.div
+                  initial={offscreen}
+                  whileInView={onscreen}
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="flex flex-col px-11 mt-7 max-md:px-5"
+                >
+                  <div className="self-center font-medium text-center">
+                    {sponsor.title}
+                  </div>
+                  <div className="mt-9 font-bold text-[#ccff00]">
+                    {sponsor.name}
+                  </div>
+                  <div className="mt-6 text-sm tracking-tight leading-5">
+                    {sponsor.description}
+                  </div>
+                  <a href={sponsor.link} target="_blank">
+                    <Image
+                      loading="lazy"
+                      src={sponsor.logoUrl}
+                      className="mt-14 max-w-full aspect-[2.13] w-[114px] max-md:mt-10"
+                    />
+                  </a>
+                </motion.div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* series sponsors #################################### */}
+      <motion.div
+        initial={offscreen}
+        whileInView={onscreen}
+        viewport={{ once: true, amount: 0.3 }}
+        className={`text-5xl text-center text-black leading-[61.92px] max-md:text-4xl ${anton.className} `}
+      >
         OUR SERIES SPONSORS
       </motion.div>
       <motion.div
@@ -99,7 +170,7 @@ function Oursponsor() {
       <div className="self-stretch mt-24 w-full max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-[3%] gap-y-14 flex-wrap max-md:flex-col  max-md:gap-0">
           {/* Map over sponsors array and render sponsor cards dynamically */}
-          {sponsors.map((sponsor, index) => (
+          {sponsors_series.map((sponsor, index) => (
             <div
               key={index}
               className="flex flex-wrap w-[31%] max-md:ml-0 max-md:w-full"

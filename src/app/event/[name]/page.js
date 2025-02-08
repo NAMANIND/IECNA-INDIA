@@ -122,7 +122,7 @@ function page({ params }) {
         "megha.salian@influenceexchangegroup.com",
       ],
     },
-    ma: {
+    arfath: {
       FormType: "general",
       emails: [
         "testokie1@gmail.com",
