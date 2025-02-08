@@ -190,6 +190,21 @@ function ImageDownloadPage({
     }
   };
 
+  if (!transformedImageUrl) {
+    return (
+      <div className="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="bg-white p-8 rounded-lg flex flex-col items-center">
+          <CircularProgress className="animate-spin rounded-full h-16 w-16  mb-4" />
+
+          <p className="text-lg font-semibold">Generating Banner...</p>
+          <p className="text-sm text-gray-500 text-center mt-2">
+            Please do not refresh the page or close the tab.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="relative w-[100%] h-fit max-h-[30vh] sm:max-h-[70vh] pb-[10vh] flex justify-center items-center">
       {transformedImageUrl && (
@@ -208,8 +223,8 @@ function ImageDownloadPage({
         
         "
         >
-          <CircularProgress className="animate-spin rounded-full h-16 w-16 mb-4" />
-          <p className="text-2xl text-gray-600">Generating Banner...</p>
+          {/* <CircularProgress className="animate-spin rounded-full h-16 w-16 mb-4" />
+          <p className="text-2xl text-gray-600">Generating Banner...</p> */}
         </div>
       )}
       {!displayed && (
