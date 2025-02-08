@@ -223,8 +223,8 @@ function ImageDownloadPage({
         
         "
         >
-          {/* <CircularProgress className="animate-spin rounded-full h-16 w-16 mb-4" />
-          <p className="text-2xl text-gray-600">Generating Banner...</p> */}
+          <CircularProgress className="animate-spin rounded-full h-16 w-16 mb-4" />
+          {/* <p className="text-2xl text-gray-600">Generating Banner...</p> */}
         </div>
       )}
       {!displayed && (
