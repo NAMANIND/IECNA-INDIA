@@ -81,7 +81,7 @@ function Whoshould() {
   };
 
   return (
-    <div className="flex flex-col pt-11 pb-28 bg-black">
+    <div className="flex flex-col pt-28 pb-28 bg-black">
       <motion.div
         initial={offscreen}
         whileInView={onscreen}

@@ -8,9 +8,10 @@ function Sponsors() {
   return (
     <div>
       <Headtop head="Sponsors" />
-      <Whoshould />
+
       <Oursponsor />
       <Mediapartners />
+      <Whoshould />
     </div>
   );
 }
