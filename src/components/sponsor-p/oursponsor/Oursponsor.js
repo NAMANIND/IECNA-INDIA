@@ -13,51 +13,117 @@ import Image from "next/image";
 
 function Oursponsor() {
   // Define data for sponsors
+  // const sponsors_series = [
+  //   {
+  //     title: "TITLE SPONSOR",
+  //     name: "Insta Chef",
+  //     description:
+  //       "InstaChef, Dubai’s top Chef service, offers professional chefs for hire at your home. Available for daily, weekly, monthly needs, or parties, our chefs create delicious, personalized home-cooked meals.",
+  //     imageUrl: "/images/sponsors/instachef-og.jpg",
+  //     logoUrl: chef,
+  //     link: "https://www.instachef.ae/",
+  //   },
+  //   {
+  //     title: "PRESENTING PARTNER",
+  //     name: "Fly Bharathi",
+  //     description:
+  //       "Fly Bharathi Aviations and Aeronautics Pvt Ltd (FBAA) is a new Indian aviation company offering airport operations, aircraft MRO, cargo handling, and flight training services.",
+  //     imageUrl: "/images/sponsors/flybharathi-og.jpg",
+  //     logoUrl: fly,
+  //     link: "#",
+  //   },
+  //   {
+  //     title: "DATA ANALYTICS PARTNER",
+  //     name: "Views",
+  //     description:
+  //       "Views is a platform designed for charities, non-profits, and social purpose organizations to manage data and measure impact. It features modules for managing contacts, tracking projects, storing evidence, and generating reports.",
+  //     imageUrl: "/images/sponsors/views-og.jpg",
+  //     logoUrl: views,
+  //     link: "https://www.viewsapp.net/",
+  //   },
+  //   {
+  //     title: "Lanyard Sponsor",
+  //     name: "Socio Genee",
+  //     description:
+  //       "Socio Genee is the leading platform offering 100% transparency and business growth for Influencers, focused on building communities to enhance and uplift the creator ecosystem.",
+  //     imageUrl: "/images/sponsors/soge-og.jpg",
+  //     logoUrl: soge,
+  //     link: "https://sociogenee.com/",
+  //   },
+  //   {
+  //     title: "Solution Partner",
+  //     name: "Greenroom now",
+  //     description:
+  //       "Greenroom is a content and influencer marketing agency based in Bangalore and Mumbai. We believe in turning attention to retention: crafting long-term impact. We are here for brands and creators who are looking to navigate and thrive in the attn economy and work with some of the top brands in the country.",
+  //     imageUrl: "/images/sponsors/greenroom-og.png",
+  //     logoUrl: greenroom,
+  //     link: "https://www.greenroomnow.com/",
+  //   },
+  // ];
+
   const sponsors_series = [
     {
-      title: "TITLE SPONSOR",
-      name: "Insta Chef",
+      title: "Gold Sponsor",
+      name: "Social Chameleon",
       description:
-        "InstaChef, Dubai’s top Chef service, offers professional chefs for hire at your home. Available for daily, weekly, monthly needs, or parties, our chefs create delicious, personalized home-cooked meals.",
-      imageUrl: "/images/sponsors/instachef-og.jpg",
-      logoUrl: chef,
-      link: "https://www.instachef.ae/",
+        "Social Chameleon is a leading Search-First Social Media® agency with expertise in social media, search, and content creation. Our teams in London and Sydney work with pioneering brands to deliver measurable outcomes and strategies that get noticed.",
+      imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/socialc.png",
+      logoUrl: "https://uae.theiena.com/images/sponsors/uae/socialc.png",
+      link: "https://socialchameleon.com",
     },
     {
-      title: "PRESENTING PARTNER",
-      name: "Fly Bharathi",
+      title: "Exhibitor",
+      name: "PROVEN 360",
       description:
-        "Fly Bharathi Aviations and Aeronautics Pvt Ltd (FBAA) is a new Indian aviation company offering airport operations, aircraft MRO, cargo handling, and flight training services.",
-      imageUrl: "/images/sponsors/flybharathi-og.jpg",
-      logoUrl: fly,
-      link: "#",
+        "Founded in 2022, PROVEN 360 is a premier digital marketing agency dedicated to helping businesses grow through tailored strategies. They offer website development, social media, SEO, and more to drive engagement and conversions.",
+      imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/proven.png",
+      logoUrl: "https://uae.theiena.com/images/sponsors/uae/proven.png",
+      link: "https://www.proven-360.com",
     },
     {
-      title: "DATA ANALYTICS PARTNER",
-      name: "Views",
+      title: "Solution partner",
+      name: "Takefluence",
       description:
-        "Views is a platform designed for charities, non-profits, and social purpose organizations to manage data and measure impact. It features modules for managing contacts, tracking projects, storing evidence, and generating reports.",
-      imageUrl: "/images/sponsors/views-og.jpg",
-      logoUrl: views,
-      link: "https://www.viewsapp.net/",
+        "Takefluence is a platform to collaborate with creators/influencers or even engage customers to create, distribute, amplify content, drive sales with promocode attribution, write reviews and get paid. We automate all the flow from invitation, moderation, reporting to payouts.",
+      imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/takef.png",
+      logoUrl: "https://uae.theiena.com/images/sponsors/uae/takef.png",
+      link: "https://takefluence.com",
     },
     {
-      title: "Lanyard Sponsor",
-      name: "Socio Genee",
+      title: "Exhibitor",
+      name: "Yala Yala Media CO. L.L.C",
       description:
-        "Socio Genee is the leading platform offering 100% transparency and business growth for Influencers, focused on building communities to enhance and uplift the creator ecosystem.",
-      imageUrl: "/images/sponsors/soge-og.jpg",
-      logoUrl: soge,
-      link: "https://sociogenee.com/",
+        "Yala Yala Media CO. L.L.C, a Dubai-based social media company focused on TikTok. With a founding team from China. They understand TikTok’s commercial potential and aim to foster stronger collaborations with brands and media companies to build a robust MCN ecosystem in the Middle East.",
+      imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/yalayala.png",
+      logoUrl: "https://uae.theiena.com/images/sponsors/uae/yalayala.png",
+      link: "https://yalayala.ae",
     },
     {
-      title: "Solution Partner",
-      name: "Greenroom now",
+      title: "Supporting Partner",
+      name: "Whoyer",
       description:
-        "Greenroom is a content and influencer marketing agency based in Bangalore and Mumbai. We believe in turning attention to retention: crafting long-term impact. We are here for brands and creators who are looking to navigate and thrive in the attn economy and work with some of the top brands in the country.",
-      imageUrl: "/images/sponsors/greenroom-og.png",
-      logoUrl: greenroom,
-      link: "https://www.greenroomnow.com/",
+        "Whoyer connects influencers, brands, and fashion enthusiasts, offering tools, mentorship, and personalized fashion guidance to help users succeed, grow their audience, and make smart style choices.",
+      imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/whoyer.png",
+      logoUrl: "https://uae.theiena.com/images/sponsors/uae/whoyer.png",
+      link: "https://www.whoyer.com",
+    },
+    {
+      title: "Event contracting partner",
+      name: "Pro Expo",
+      description:
+        "Pro Expo Ltd, based in Kenya, specializes in creative exhibition and stand construction solutions for events and conferences. Since 2016, the company has delivered over 870,000 square meters of stands across 46 exhibitions, serving diverse sectors like health, technology, hospitality, and automotive. Renowned for its efficiency and high-quality service, Pro Expo offers customized event setups, branding, and AV equipment hire. With a strong track record of delivering major projects like Medic East Africa and China Trade Week, Pro Expo is a trusted partner for businesses across East Africa and beyond.",
+      imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/proexpo.png",
+      logoUrl: "https://uae.theiena.com/images/sponsors/uae/proexpo.png",
+      link: "https://www.pro-expo.co.ke/",
+    },
+    {
+      title: "Exhibitor",
+      name: "Social Cash",
+      description:
+        "Social Cash is a UAE-based Influencer Marketing Platform where anyone can become an influencer, regardless of their follower count and get paid based on their social engagement. Social Cash empowers brands to connect with influencers who truly align with their campaign goals through advanced algorithms that match profiles based on demographics, interests, and engagement rates. By focusing on authentic digital word-of-mouth marketing, Social Cash enables brands to run targeted, impactful campaigns with influencers who resonate with their audience, ensuring maximum reach and meaningful connections.",
+      imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/socialcash.png",
+      logoUrl: "https://uae.theiena.com/images/sponsors/uae/socialcash.png",
+      link: "https://www.socialcash.ae/",
     },
   ];
 
@@ -203,7 +269,7 @@ function Oursponsor() {
                     {sponsor.description}
                   </div>
                   <a href={sponsor.link} target="_blank">
-                    <Image
+                    <img
                       loading="lazy"
                       src={sponsor.logoUrl}
                       className="mt-14 max-w-full aspect-[2.13] w-[114px] max-md:mt-10"
