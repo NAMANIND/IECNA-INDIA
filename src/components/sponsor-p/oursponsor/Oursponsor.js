@@ -63,6 +63,27 @@ function Oursponsor() {
 
   const sponsors_series = [
     {
+      title: "Lanyard Sponsor",
+      name: "Socio Genee",
+      description:
+        "Socio Genee is the leading platform offering 100% transparency and business growth for Influencers, focused on building communities to enhance and uplift the creator ecosystem.",
+      imageUrl: "https://india2024.theiena.com/images/sponsors/soge-og.jpg",
+      logoUrl: "https://india2024.theiena.com/images/sponsors/soge.png",
+      link: "https://sociogenee.com/",
+      special: true,
+    },
+    {
+      title: "Solution Partner",
+      name: "Greenroom now",
+      description:
+        "Greenroom is a content and influencer marketing agency based in Bangalore and Mumbai. We believe in turning attention to retention: crafting long-term impact. We are here for brands and creators who are looking to navigate and thrive in the attn economy and work with some of the top brands in the country.",
+      imageUrl:
+        "https://india2024.theiena.com/images/sponsors/greenroom-og.png",
+      logoUrl: "https://india2024.theiena.com/images/sponsors/greenroom.png",
+      link: "https://www.greenroomnow.com/",
+      special: true,
+    },
+    {
       title: "Gold Sponsor",
       name: "Social Chameleon",
       description:
@@ -70,6 +91,7 @@ function Oursponsor() {
       imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/socialc.png",
       logoUrl: "https://uae.theiena.com/images/sponsors/uae/socialc.png",
       link: "https://socialchameleon.com",
+      special: true,
     },
     {
       title: "Exhibitor",
@@ -79,6 +101,7 @@ function Oursponsor() {
       imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/proven.png",
       logoUrl: "https://uae.theiena.com/images/sponsors/uae/proven.png",
       link: "https://www.proven-360.com",
+      special: true,
     },
     {
       title: "Solution partner",
@@ -88,6 +111,7 @@ function Oursponsor() {
       imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/takef.png",
       logoUrl: "https://uae.theiena.com/images/sponsors/uae/takef.png",
       link: "https://takefluence.com",
+      special: true,
     },
     {
       title: "Exhibitor",
@@ -97,6 +121,7 @@ function Oursponsor() {
       imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/yalayala.png",
       logoUrl: "https://uae.theiena.com/images/sponsors/uae/yalayala.png",
       link: "https://yalayala.ae",
+      special: true,
     },
     {
       title: "Supporting Partner",
@@ -106,6 +131,7 @@ function Oursponsor() {
       imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/whoyer.png",
       logoUrl: "https://uae.theiena.com/images/sponsors/uae/whoyer.png",
       link: "https://www.whoyer.com",
+      special: true,
     },
     {
       title: "Event contracting partner",
@@ -115,6 +141,7 @@ function Oursponsor() {
       imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/proexpo.png",
       logoUrl: "https://uae.theiena.com/images/sponsors/uae/proexpo.png",
       link: "https://www.pro-expo.co.ke/",
+      special: true,
     },
     {
       title: "Exhibitor",
@@ -124,6 +151,7 @@ function Oursponsor() {
       imageUrl: "https://uae.theiena.com/images/sponsors/uae/og/socialcash.png",
       logoUrl: "https://uae.theiena.com/images/sponsors/uae/socialcash.png",
       link: "https://www.socialcash.ae/",
+      special: true,
     },
   ];
 
@@ -269,11 +297,18 @@ function Oursponsor() {
                     {sponsor.description}
                   </div>
                   <a href={sponsor.link} target="_blank">
-                    <img
-                      loading="lazy"
-                      src={sponsor.logoUrl}
-                      className="mt-14 max-w-full aspect-[2.13] w-[114px] max-md:mt-10"
-                    />
+                    {sponsor.special ? (
+                      <img
+                        src={sponsor.logoUrl}
+                        className="mt-14 max-w-full aspect-[2.13] w-[114px] max-md:mt-10"
+                      />
+                    ) : (
+                      <Image
+                        loading="lazy"
+                        src={sponsor.logoUrl}
+                        className="mt-14 max-w-full aspect-[2.13] w-[114px] max-md:mt-10"
+                      />
+                    )}
                   </a>
                 </motion.div>
               </div>
