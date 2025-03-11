@@ -107,23 +107,23 @@ function ImageDownloadPage({
       if (field === "marketer") {
         const transformedImageUrl =
           `https://res.cloudinary.com/dmedpnbvc/image/upload/` +
-          `l_iecna_upload_india:${overlayParam}/fl_layer_apply,ar_1.0,c_lfill,w_352,h_352,x_0,y_-2,r_max/c_scale/co_rgb:FFFFFF,l_text:arial_42_bold_normal_left:${encodeURIComponent(
+          `l_iecna_upload_india:${overlayParam}/fl_layer_apply,ar_1.0,c_thumb,w_355,h_355,x_326,y_-42,r_max/c_scale/co_rgb:FFFFFF,l_text:arial_42_bold_normal_left:${encodeURIComponent(
             title
-          )}/fl_layer_apply,x_0,y_270/co_rgb:FFFFFF,l_text:arial_28_normal_left:${encodeURIComponent(
+          )}/fl_layer_apply,x_326,y_200/co_rgb:FFFFFF,l_text:arial_28_normal_left:${encodeURIComponent(
             company
-          )}/fl_layer_apply,x_0,y_320/co_rgb:FFFFFF,l_text:arial_28_normal_left:${encodeURIComponent(
+          )}/fl_layer_apply,x_326,y_245/co_rgb:FFFFFF,l_text:arial_28_normal_left:${encodeURIComponent(
             marco
-          )}/fl_layer_apply,x_0,y_360/jg9izofdle1zv3uj5mzh.jpg`;
+          )}/fl_layer_apply,x_326,y_280/htp6y2eawvkwraazix5w.jpg`;
 
         setTransformedImageUrl(transformedImageUrl);
       } else {
         const transformedImageUrl =
           `https://res.cloudinary.com/dmedpnbvc/image/upload/` +
-          `l_iecna_upload_india:${overlayParam}/fl_layer_apply,ar_1.0,c_lfill,w_352,h_352,x_0,y_-2,r_max/c_scale/co_rgb:FFFFFF,l_text:arial_42_bold_normal_left:${encodeURIComponent(
+          `l_iecna_upload_india:${overlayParam}/fl_layer_apply,ar_1.0,c_thumb,w_355,h_355,x_326,y_-42,r_max/c_scale/co_rgb:FFFFFF,l_text:arial_42_bold_normal_left:${encodeURIComponent(
             title
-          )}/fl_layer_apply,x_0,y_270/co_rgb:FFFFFF,l_text:arial_28_normal_left:${encodeURIComponent(
+          )}/fl_layer_apply,x_326,y_200/co_rgb:FFFFFF,l_text:arial_28_normal_left:${encodeURIComponent(
             company
-          )}/fl_layer_apply,x_0,y_320/jg9izofdle1zv3uj5mzh.jpg`;
+          )}/fl_layer_apply,x_326,y_245/htp6y2eawvkwraazix5w.jpg`;
 
         setTransformedImageUrl(transformedImageUrl);
       }
