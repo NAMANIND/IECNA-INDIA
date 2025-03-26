@@ -9,6 +9,7 @@ import views from "../../../../public/images/sponsors/views.jpg";
 import soge from "../../../../public/images/sponsors/soge.png";
 import greenroom from "../../../../public/images/sponsors/greenroom.png";
 import flaunt from "../../../../public/images/sponsors/flaunt.png";
+import divo from "../../../../public/images/sponsors/divo.png";
 import Image from "next/image";
 
 function Oursponsor() {
@@ -164,6 +165,15 @@ function Oursponsor() {
       imageUrl: "/images/sponsors/flaunt-og.png",
       logoUrl: flaunt,
       link: "https://www.letsflaunt.com/",
+    },
+    {
+      title: "Solution Partner",
+      name: "Divo",
+      description:
+        "Divo, a part of Warner Music Group, is one of India's leading digital media and music companies. Founded in 2014, it operates across Chennai, Bengaluru, Cochin, Mumbai, Delhi, and Hyderabad. Divo specializes in Online Video, Music Distribution, and Digital/Influencer Marketing. It is a top Multi-Channel Network, a major independent music distributor in South India, and a key player in digital marketing, working with brands, artists, and influencers.",
+      imageUrl: "/images/sponsors/divo-og.png",
+      logoUrl: divo,
+      link: "https://divo.in/",
     },
   ];
 
