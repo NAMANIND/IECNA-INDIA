@@ -11,6 +11,7 @@ import greenroom from "../../../../public/images/sponsors/greenroom.png";
 import flaunt from "../../../../public/images/sponsors/flaunt.png";
 import divo from "../../../../public/images/sponsors/divo.png";
 import proexpo from "../../../../public/images/sponsors/proexpo.png";
+import offer from "../../../../public/images/sponsors/offer.png";
 import Image from "next/image";
 
 function Oursponsor() {
@@ -184,6 +185,15 @@ function Oursponsor() {
       imageUrl: "/images/sponsors/proexpo-og.png",
       logoUrl: proexpo,
       link: "https://www.pro-expo.co.ke/",
+    },
+    {
+      title: "Exhibitor",
+      name: "Offer18",
+      description:
+        'Offer18 is an "Award Winning" Campaign Tracking Platform for Affiliate Networks, Advertisers, and Agencies with professional tracking capabilities. Offer18 helps digital professionals to create their affiliate network, optimize their campaign performance and utilize every bit of their traffic sources to generate better ROI using in-built advanced tools of technology.',
+      imageUrl: "/images/sponsors/offer-og.png",
+      logoUrl: offer,
+      link: "https://www.offer18.com",
     },
   ];
 

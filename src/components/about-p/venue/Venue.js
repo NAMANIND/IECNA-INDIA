@@ -38,15 +38,15 @@ function EventDetails() {
           <span className="text-white"> APRIL 2025</span>
         </time>
         <div className="self-end sm:mt-12 my-5 text-5xl uppercase  font-medium  text-[#ccff00] tracking-[4px]	 leading-[56px]  max-md:text-4xl max-md:leading-[52px]">
-          {/* <a href="https://maps.app.goo.gl/fgS3tdowgfkmGcij9" target="_blank">
-            Taj Lands End
+          <a href="https://maps.app.goo.gl/wBPSoapvoHo5oLLy9" target="_blank">
+            The Leela
             <br />
-            <span className="flex flex-row  justify-end gap-2">
+            <span className="flex flex-row gap-2">
               {" "}
               MUMBAI {"    "}
               <FaLocationDot />
             </span>
-          </a> */}
+          </a>
         </div>
       </div>
     </>
@@ -137,7 +137,7 @@ function Venue() {
             <div className="flex overflow-hidden relative flex-col grow items-center px-16 pt-20 pb-12 text-2xl font-semibold text-center text-black uppercaseleading-[90px] min-h-[460px]  max-md:mt-0 max-md:max-w-full rounded-[36px] ">
               <img
                 loading="lazy"
-                src="/images/location.jpg"
+                src="/images/location2.jpg"
                 className="object-cover absolute inset-0 size-full rounded-[36px] "
                 alt=""
               />
@@ -145,8 +145,12 @@ function Venue() {
               <div
                 className={`sm:relative absolute bottom-0 px-16 justify-center items-center  sm:py-5 py-0 sm:mt-72 sm:max-w-full   shadow-2xl  max-md:px-5 max-md:mt-10 ${work_sans.className} `}
               >
-                <Button color="green" href="./register" img="arrow">
-                  Register
+                <Button
+                  color="green"
+                  href="https://maps.app.goo.gl/wBPSoapvoHo5oLLy9"
+                  img="arrow"
+                >
+                  Location
                 </Button>
               </div>
             </div>

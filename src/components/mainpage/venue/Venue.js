@@ -84,18 +84,18 @@ function Venue() {
               <div
                 className={`mt-0 tracking-tighter leading-[56px] uppercase max-md:mt-10 max-md:text-4xl max-md:leading-[52px] ${work_sans.className}`}
               >
-                {/* <a
-                  href="https://maps.app.goo.gl/fgS3tdowgfkmGcij9"
+                <a
+                  href="https://maps.app.goo.gl/wBPSoapvoHo5oLLy9"
                   target="_blank"
                 >
-                  Taj Lands End
+                  The Leela
                   <br />
                   <span className="flex flex-row gap-2">
                     {" "}
                     MUMBAI {"    "}
                     <FaLocationDot />
                   </span>
-                </a> */}
+                </a>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ function Venue() {
 
           {/* <div className="flex overflow-hidden relative flex-col grow justify-center items-center px-16 py-14 text-center uppercase  max-md:px-5 max-md:mt-10 max-md:max-w-full rounded-t-[40px] sm:bg-gradient-to-l bg-white from-white via-white to-black rotate-60 ">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.450570498883!2d72.81669337471995!3d19.043917452979905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c945f2fb1149%3A0xa2ba742a39963b31!2sTaj%20Lands%20End%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1716661593473!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.2590827766426!2d72.86756147472099!3d19.09482505141632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8535610395f%3A0x8d19c5468c6f30f8!2sThe%20Leela%20Mumbai!5e0!3m2!1sen!2sin!4v1716661903559!5m2!1sen!2sin"
               className="object-cover absolute inset-0 w-full h-full rounded-[40px]    "
               allowfullscreen=""
               loading="lazy"
@@ -139,7 +139,7 @@ function Venue() {
 
             <div className="relative bottom-0 left-0 flex w-full sm:flex-col flex-col items-center gap-4  text-lg text-white sm:h-full sm:justify-between md:gap-0">
               <div className="text-6xl text-transparent leading-[120px] max-md:text-4xl">
-                TAJ LANDS END
+                THE LEELA MUMBAI
               </div>
               <div
                 className="sm:scale-100 scale-75 
