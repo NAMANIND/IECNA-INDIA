@@ -160,15 +160,6 @@ function Oursponsor() {
 
   const sponsors = [
     {
-      title: "EXHIBITOR",
-      name: "Flaunt",
-      description:
-        "Flaunt offers an AI-powered SaaS platform purposefully designed for beauty & fashion brands to grow their social media & scale their influencer marketing!",
-      imageUrl: "/images/sponsors/flaunt-og.png",
-      logoUrl: flaunt,
-      link: "https://www.letsflaunt.com/",
-    },
-    {
       title: "Solution Partner",
       name: "Divo",
       description:
@@ -176,6 +167,15 @@ function Oursponsor() {
       imageUrl: "/images/sponsors/divo-og.png",
       logoUrl: divo,
       link: "https://divo.in/",
+    },
+    {
+      title: "EXHIBITOR",
+      name: "Flaunt",
+      description:
+        "Flaunt offers an AI-powered SaaS platform purposefully designed for beauty & fashion brands to grow their social media & scale their influencer marketing!",
+      imageUrl: "/images/sponsors/flaunt-og.png",
+      logoUrl: flaunt,
+      link: "https://www.letsflaunt.com/",
     },
     {
       title: "Event contracting partner",
