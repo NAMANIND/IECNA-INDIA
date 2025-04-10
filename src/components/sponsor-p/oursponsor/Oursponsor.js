@@ -12,6 +12,7 @@ import flaunt from "../../../../public/images/sponsors/flaunt.png";
 import divo from "../../../../public/images/sponsors/divo.png";
 import proexpo from "../../../../public/images/sponsors/proexpo.png";
 import offer from "../../../../public/images/sponsors/offer.png";
+import klugklug from "../../../../public/images/sponsors/klug.png";
 import Image from "next/image";
 
 function Oursponsor() {
@@ -169,22 +170,22 @@ function Oursponsor() {
       link: "https://divo.in/",
     },
     {
-      title: "EXHIBITOR",
+      title: "Solution Partner",
+      name: "KlugKlug",
+      description:
+        "KlugKlug is a leading Influencer Marketing Tech SaaS platform offering real-time, AI-ML powered data on millions of influencers across Instagram, YouTube, and TikTok. With up to 85% data accuracy, it enables brands to discover the right influencers, access deep audience insights, avoid overlap, and improve campaign efficiency by 20–80%.",
+      imageUrl: "/images/sponsors/klug-og.png",
+      logoUrl: klugklug,
+      link: "https://klugklug.com/",
+    },
+    {
+      title: "Exhibitor",
       name: "Flaunt",
       description:
         "Flaunt offers an AI-powered SaaS platform purposefully designed for beauty & fashion brands to grow their social media & scale their influencer marketing!",
       imageUrl: "/images/sponsors/flaunt-og.png",
       logoUrl: flaunt,
       link: "https://www.letsflaunt.com/",
-    },
-    {
-      title: "Event contracting partner",
-      name: "Pro Expo",
-      description:
-        "Pro Expo Ltd, based in Kenya, specializes in creative exhibition and stand construction solutions for events and conferences. Since 2016, the company has delivered over 870,000 square meters of stands across 46 exhibitions, serving diverse sectors like health, technology, hospitality, and automotive. Renowned for its efficiency and high-quality service, Pro Expo offers customized event setups, branding, and AV equipment hire. With a strong track record of delivering major projects like Medic East Africa and China Trade Week, Pro Expo is a trusted partner for businesses across East Africa and beyond.",
-      imageUrl: "/images/sponsors/proexpo-og.png",
-      logoUrl: proexpo,
-      link: "https://www.pro-expo.co.ke/",
     },
     {
       title: "Exhibitor",
@@ -194,6 +195,15 @@ function Oursponsor() {
       imageUrl: "/images/sponsors/offer-og.png",
       logoUrl: offer,
       link: "https://www.offer18.com",
+    },
+    {
+      title: "Event contracting partner",
+      name: "Pro Expo",
+      description:
+        "Pro Expo Ltd, based in Kenya, specializes in creative exhibition and stand construction solutions for events and conferences. Since 2016, the company has delivered over 870,000 square meters of stands across 46 exhibitions, serving diverse sectors like health, technology, hospitality, and automotive. Renowned for its efficiency and high-quality service, Pro Expo offers customized event setups, branding, and AV equipment hire. With a strong track record of delivering major projects like Medic East Africa and China Trade Week, Pro Expo is a trusted partner for businesses across East Africa and beyond.",
+      imageUrl: "/images/sponsors/proexpo-og.png",
+      logoUrl: proexpo,
+      link: "https://www.pro-expo.co.ke/",
     },
   ];
 
@@ -256,7 +266,7 @@ function Oursponsor() {
                   <div className="mt-9 font-bold text-[#ccff00]">
                     {sponsor.name}
                   </div>
-                  <div className="mt-6 text-sm tracking-tight leading-5">
+                  <div className="mt-6 text-sm tracking-tight leading-[130%]">
                     {sponsor.description}
                   </div>
                   <a href={sponsor.link} target="_blank">
