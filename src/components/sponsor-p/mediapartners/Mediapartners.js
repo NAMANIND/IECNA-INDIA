@@ -4,50 +4,16 @@ import { anton, work_sans } from "@/styles/fonts";
 import Button from "@/components/button/Button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import coin from "../../../../public/images/sponsors/coinpedia.png";
-import ply from "../../../../public/images/sponsors/deriveply.png";
-import gluf from "../../../../public/images/sponsors/gulf.png";
-import aitime from "../../../../public/images/sponsors/aitime.png";
+import uae_startupnews from "../../../../public/images/sponsors/startupnews.png";
+import uae_globalhues from "../../../../public/images/sponsors/global-hues.png";
 import cyberdefence from "../../../../public/images/sponsors/cyberdefence.png";
-import womenera from "../../../../public/images/sponsors/womenera.png";
-import impact from "../../../../public/images/sponsors/impact.png";
-
-import business from "../../../../public/images/sponsors/businesss.png";
+import uae_gazet from "../../../../public/images/sponsors/gazet-international.png";
+import uae_utoday from "../../../../public/images/sponsors/utoday.png";
+import uae_mideastinfo from "../../../../public/images/sponsors/mid.png";
 
 function Mediapartners() {
   // Define data for sponsors
   const sponsors = [
-    // {
-    //   name: "Gulf Moments",
-    //   description:
-    //     "The platform provides brand awareness across various channels like web search engines, content and email marketing and provides measurable and transparent results.",
-    //   imageUrl:
-    //     "https://cdn.builder.io/api/v1/image/assets/TEMP/2177b778065eb53456e9aae35c54027c06ae1da4769bc4ccee832d4b516451f3?apiKey=5e27b1defd60460eaa6dca842133145f&",
-    //   logoUrl: gluf,
-    // },
-    // {
-    //   name: "Coin Pedia",
-    //   description:
-    //     "The platform provides brand awareness across various channels like web search engines, content and email marketing and provides measurable and transparent results.",
-    //   imageUrl: "/images/sponsors/coinpedia-og.jpg",
-    //   logoUrl: coin,
-    // },
-    {
-      name: "Drive Ply",
-      description:
-        "The platform provides brand awareness across various channels like web search engines, content and email marketing and provides measurable and transparent results.",
-      imageUrl: "/images/sponsors/deriveply-og.jpg",
-      logoUrl: ply,
-      link: "https://www.driveply.com/ ",
-    },
-    {
-      name: "AI time journal",
-      description:
-        "AI Time Journal explores how Artificial Intelligence and Exponential Technologies bring opportunities for people, organizations, and societies to increase their wealth and health.",
-      imageUrl: "/images/sponsors/aitime-og.png",
-      logoUrl: aitime,
-      link: "https://www.aitimejournal.com/",
-    },
     {
       name: "Cyber defense Magazine",
       description:
@@ -57,28 +23,44 @@ function Mediapartners() {
       link: "https://www.cyberdefensemagazine.com/",
     },
     {
-      name: "Woman’s Era",
+      name: "Startupnews.fyi",
       description:
-        "Woman’s Era is one of the front runners in publications from Delhi Press. Woman’s Era editorial team strives to bring interesting, informative and useful articles and features to make your life beautiful.",
-      imageUrl: "/images/sponsors/womenera-og.png",
-      logoUrl: womenera,
-      link: "https://www.womansera.com/",
+        "Startupnews.fyi is a media platform dedicated to providing the latest news, insights, and resources for the startup community. They focus on delivering timely updates, industry trends, and expert opinions to support entrepreneurs, investors, and innovators. As a media partner, Startup.fyi offers valuable exposure and thought leadership within the startup ecosystem.",
+      imageUrl: "/images/sponsors/og/startupnews.png",
+      logoUrl: uae_startupnews,
+      link: "https://startupnews.fyi/",
     },
     {
-      name: "iMPACT",
+      name: "Mid East Info",
       description:
-        "iMPACT serves as a dedicated media outlet for nonprofits, civil society, and socially-focused businesses, offering curated news, trends, insights, and best practices from influential voices within the development sector.",
-      imageUrl: "/images/sponsors/impact-og.png",
-      logoUrl: impact,
-      link: "https://theimpactmagazine.org/",
+        "Mid-east.info is a leading business news and information publisher that covers the greater Middle East region. Since 2012, we have been providing daily updates on news, articles, reports, and other forms of content for professionals interested in doing business in the Middle East. Our goal is to offer instant business updates, market data, tips, reports, and analysis to help business professionals stay informed about the MENA region.",
+      imageUrl: "/images/sponsors/og/mid.png",
+      logoUrl: uae_mideastinfo,
+      link: "https://mid-east.info/",
     },
     {
-      name: "Business outreach",
+      name: "Gazet International",
       description:
-        "Business Outreach is one of the fastest growing business magazines in India, where CEOs, CXOs and top executives of a company share their insights about their industry and initiate productive discussion about the latest market trends with the editorial staff and peers.",
-      imageUrl: "images/sponsors/business-og.png",
-      logoUrl: business,
-      link: "https://www.businessoutreach.in/",
+        "Gazet International is a global entity that aims to become the leading destination for the latest and most in-depth news from diverse industries worldwide. With a steadfast commitment to delivering accurate, up-to-the-minute information, we have established ourselves as a trusted source for all things related to business, technology, finance, banking, and corporate affairs. Our mission is to empower readers with the knowledge they need to navigate the rapidly evolving global landscape.",
+      imageUrl: "/images/sponsors/og/2.png",
+      logoUrl: uae_gazet,
+      link: "https://gazetinternational.com/",
+    },
+    {
+      name: "The Global Hues",
+      description:
+        "The Global Hues is a leading media platform focused on delivering engaging and insightful content across various industries. They specialize in offering comprehensive news, trends, and analysis, providing valuable perspectives and information to a global audience.",
+      imageUrl: "/images/sponsors/og/global-hues.png",
+      logoUrl: uae_globalhues,
+      link: "https://www.theglobalhues.com/",
+    },
+    {
+      name: "U. Today",
+      description:
+        "U. Today is a leading cryptocurrency and blockchain media outlet launched in 2017, covering trends in Web3, crypto, blockchain, and AI. With a global team, it provides a range of content including news, guides, reviews, and price forecasts to its three million readers.",
+      imageUrl: "/images/sponsors/og/utoday.png",
+      logoUrl: uae_utoday,
+      link: "https://u.today/",
     },
   ];
 
