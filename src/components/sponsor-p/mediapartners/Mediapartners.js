@@ -124,9 +124,10 @@ function Mediapartners() {
                     {sponsor.description}
                   </div>
                   <a href={sponsor.link} target="_blank">
-                    <Image
+                    <img
                       loading="lazy"
-                      src={sponsor.logoUrl}
+                      src={sponsor.logoUrl.src}
+                      alt={sponsor.name}
                       className="mt-20 max-w-full aspect-[2.13] w-[114px] max-md:mt-10"
                     />
                   </a>
