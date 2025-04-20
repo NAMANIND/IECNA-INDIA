@@ -354,7 +354,6 @@ function Oursponsor() {
                       />
                     ) : (
                       <img
-                        loading="lazy"
                         src={sponsor.logoUrl.src}
                         alt={sponsor.name}
                         className="mt-14 max-w-full aspect-[2.13] w-[114px] max-md:mt-10"
