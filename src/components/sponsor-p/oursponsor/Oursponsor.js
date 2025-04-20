@@ -13,6 +13,7 @@ import divo from "../../../../public/images/sponsors/divo.png";
 import proexpo from "../../../../public/images/sponsors/proexpo.png";
 import offer from "../../../../public/images/sponsors/offer.png";
 import klugklug from "../../../../public/images/sponsors/klug.png";
+import voxxy from "../../../../public/images/sponsors/voxxy.png";
 import Image from "next/image";
 
 function Oursponsor() {
@@ -195,6 +196,15 @@ function Oursponsor() {
       imageUrl: "/images/sponsors/offer-og.png",
       logoUrl: offer,
       link: "https://www.offer18.com",
+    },
+    {
+      title: "Exhibitor",
+      name: "Voxxy Media",
+      description:
+        "Voxxy Media is an award-winning, integrated creator economy agency driving the future of digital storytelling across India, Indonesia, and Southeast Asia. Our comprehensive suite of offerings includes high-impact influencer marketing, exceptional content creation, robust community building, experiential activations, meme marketing, talent management, affiliate and social commerce, and strategic brand collaborations.",
+      imageUrl: "/images/sponsors/voxxy-og.png",
+      logoUrl: voxxy,
+      link: "https://voxxymedia.com/",
     },
     {
       title: "Event contracting partner",
