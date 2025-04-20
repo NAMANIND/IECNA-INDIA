@@ -280,9 +280,9 @@ function Oursponsor() {
                     {sponsor.description}
                   </div>
                   <a href={sponsor.link} target="_blank">
-                    <Image
-                      loading="lazy"
-                      src={sponsor.logoUrl}
+                    <img
+                      alt={sponsor.name}
+                      src={sponsor.logoUrl.src}
                       className="mt-14 max-w-full aspect-[2.13] w-[114px] max-md:mt-10"
                     />
                   </a>
