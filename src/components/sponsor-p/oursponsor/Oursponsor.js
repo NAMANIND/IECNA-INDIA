@@ -14,6 +14,7 @@ import proexpo from "../../../../public/images/sponsors/proexpo.png";
 import offer from "../../../../public/images/sponsors/offer.png";
 import klugklug from "../../../../public/images/sponsors/klug.png";
 import voxxy from "../../../../public/images/sponsors/voxxy.png";
+import enki from "../../../../public/images/sponsors/enki.png";
 import Image from "next/image";
 
 function Oursponsor() {
@@ -178,6 +179,15 @@ function Oursponsor() {
       imageUrl: "/images/sponsors/klug-og.png",
       logoUrl: klugklug,
       link: "https://klugklug.com/",
+    },
+    {
+      title: "Solution Partner",
+      name: "Enki Studio",
+      description:
+        "At Enki Studio, creativity meets rebellion. What started as a classic design agency transformed into a powerhouse of imagination, innovation, and bold storytelling. They don't just deliver what brands ask for—they go beyond, crafting visual stories that pleasantly shock, deeply resonate, and leave lasting impressions.",
+      imageUrl: "/images/sponsors/enki-og.png",
+      logoUrl: enki,
+      link: "https://www.enki.studio/",
     },
     {
       title: "Exhibitor",
